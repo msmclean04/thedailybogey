@@ -2,52 +2,99 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  text-align: center;
-  background: #eaf4f7;
+  background: #eef2f5;
   color: #222;
 }
 
-/* ==== HEADER HERO ==== */
+/* ==== NAVIGATION BAR ==== */
+.navbar {
+  background: #2a7b3c;
+  padding: 10px 0;
+}
+.nav-container {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar .logo {
+  font-size: 1.5rem;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+}
+.nav-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+.nav-links li {
+  margin-left: 20px;
+}
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+}
+.nav-links a:hover {
+  color: #fafafa;
+}
+
+/* ==== HERO SECTION ==== */
 .hero {
   background: linear-gradient(135deg, #3ba55d, #2a7b3c);
   color: #fff;
-  padding: 40px 0;
+  text-align: center;
+  padding: 60px 20px;
 }
-
 .hero h1 {
-  margin: 0;
-  font-size: 3rem;
+  font-size: 2.8rem;
+  margin-bottom: 10px;
 }
-
 .hero p {
   font-size: 1.2rem;
-  margin-top: 8px;
+  margin-bottom: 20px;
 }
-
-/* ==== MAIN CONTENT ==== */
-.content {
-  padding: 40px 20px;
-}
-
-.golf-ball-container {
-  margin: 20px auto;
-}
-
-.btn {
-  display: inline-block;
+.btn-main {
+  background: #fff;
+  color: #2a7b3c;
   padding: 12px 24px;
-  margin-top: 20px;
-  background: #2a7b3c;
-  color: #fff;
-  text-decoration: none;
   border-radius: 6px;
-  font-size: 1.1rem;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* ==== SECTIONS ==== */
+.section {
+  padding: 40px 20px;
+  text-align: center;
+}
+.about h2,
+.how-it-works h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+.steps {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  padding-top: 20px;
+}
+.step h3 {
+  margin-bottom: 8px;
+  color: #2a7b3c;
 }
 
 /* ==== FOOTER ==== */
 footer {
   background: #2a7b3c;
-  padding: 12px;
+  padding: 20px;
   color: #fff;
-  margin-top: 40px;
+  text-align: center;
+}
+footer a {
+  color: #fff;
+  text-decoration: underline;
 }
