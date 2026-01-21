@@ -1,3 +1,42 @@
+function getQueryParam(name) {
+  const urlParams = new URLSearchParams(window.location.search);
+  return urlParams.get(name);
+}
+
+const id = getQueryParam("id");
+const tournament = tournaments.find(t => t.id === id);
+
+document.getElementById("tournament-title").textContent = tournament.name;
+document.getElementById("tournament-dates").textContent = tournament.dates;
+
+const playerList = document.getElementById("player-list");
+
+// show players with checkboxes
+tournament.players.forEach(player => {
+  const div = document.createElement("div");
+  div.classList.add("player-option");
+
+  div.innerHTML = `
+    <label>
+      <input type="checkbox" value="${player}">
+      ${player}
+    </label>
+  `;
+  playerList.appendChild(div);
+});
+
+document.getElementById("save-team-btn").addEventListener("click", () => {
+  const checkedBoxes = Array.from(document.querySelectorAll('input[type="checkbox"]:checked'));
+  const selectedPlayers = checkedBoxes.map(cb => cb.value);
+
+  if (selectedPlayers.length === 0) {
+    document.getElementById("status").textContent = "Select at least one player!";
+    return;
+  }
+
+  localStorage.setItem(`team-${tournament.id}`, JSON.stringify(selectedPlayers));
+  document.getElementById("status").textContent = "Team saved!";
+});
 const tournaments = [
   {
     id: "masters",
