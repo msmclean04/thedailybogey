@@ -98,3 +98,27 @@ footer a {
   color: #fff;
   text-decoration: underline;
 }
+
+.tournament-list {
+  list-style: none;
+  padding: 0;
+}
+.tournament-list li {
+  margin: 15px 0;
+  font-size: 1.2rem;
+}
+.tournament-link {
+  text-decoration: none;
+  color: #2a7b3c;
+}
+.tournament-link:hover {
+  text-decoration: underline;
+}
+.player-list {
+  margin-top: 15px;
+  text-align: left;
+  display: inline-block;
+}
+.player-option {
+  margin: 6px 0;
+}
