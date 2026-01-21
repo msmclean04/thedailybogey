@@ -10,39 +10,56 @@
 </head>
 <body>
 
-  <!-- Header -->
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="#" class="logo">Daily Bogey</a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#how-it-works">How it Works</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
   <header class="hero">
     <div class="container">
-      <h1>🏌️‍♂️ Fantasy Golf League</h1>
-      <p>Your daily golf challenge starts here!</p>
+      <h1>🏌️‍♂️ Welcome to the Fantasy Golf League</h1>
+      <p>Compete in weekly events, track stats, and rule the leaderboard!</p>
+      <a href="#how-it-works" class="btn btn-main">Get Started</a>
     </div>
   </header>
 
-  <!-- Main Content -->
-  <main class="content">
-    <!-- Golf Ball SVG -->
-    <div class="golf-ball-container">
-      <svg width="150" height="150" viewBox="0 0 512 512">
-        <circle cx="256" cy="256" r="200" fill="#fff" stroke="#000" stroke-width="15"/>
-        <!-- Dimples -->
-        <g fill="#ddd">
-          <circle cx="210" cy="200" r="15"/>
-          <circle cx="250" cy="175" r="15"/>
-          <circle cx="290" cy="210" r="15"/>
-          <circle cx="230" cy="240" r="15"/>
-          <circle cx="270" cy="240" r="15"/>
-        </g>
-      </svg>
+  <!-- About Section -->
+  <section id="about" class="section about">
+    <h2>About Daily Bogey</h2>
+    <p>Daily Bogey is your fantasy golf hub — create leagues, draft players, and track your performance throughout the season!</p>
+  </section>
+
+  <!-- How It Works -->
+  <section id="how-it-works" class="section how-it-works">
+    <h2>How It Works</h2>
+    <div class="steps">
+      <div class="step">
+        <h3>1. Create a League</h3>
+        <p>Form or join a league with friends or competitors.</p>
+      </div>
+      <div class="step">
+        <h3>2. Draft Players</h3>
+        <p>Pick your golf stars and build your roster.</p>
+      </div>
+      <div class="step">
+        <h3>3. Track Scores</h3>
+        <p>Watch real‑world performance translate into fantasy points.</p>
+      </div>
     </div>
-
-    <p>Welcome to your fantasy golf hub — track scores, build teams, and compete weekly!</p>
-
-    <a href="#" class="btn">Get Started</a>
-  </main>
+  </section>
 
   <!-- Footer -->
-  <footer>
-    <p>© 2026 Fantasy Golf League</p>
+  <footer id="contact">
+    <p>© 2026 Daily Bogey — All rights reserved.</p>
+    <p>Questions? <a href="mailto:contact@thedailybogey.com">contact@thedailybogey.com</a></p>
   </footer>
 
 </body>
