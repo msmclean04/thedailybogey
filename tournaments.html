@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tournament Schedule</title>
+  <title>Tournament</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -19,12 +19,17 @@
 </nav>
 
 <section class="section">
-  <h2>Upcoming Tournaments</h2>
-  <ul id="tournament-list" class="tournament-list">
-    <!-- Populated by JavaScript -->
-  </ul>
+  <h2 id="tournament-title"></h2>
+  <p id="tournament-dates"></p>
+
+  <h3>Select Your Fantasy Team</h3>
+  <div id="player-list" class="player-list"></div>
+
+  <button id="save-team-btn" class="btn btn-main">Save My Team</button>
+
+  <p id="status"></p>
 </section>
 
-<script src="tournaments.js"></script>
+<script src="tournament.js"></script>
 </body>
 </html>
